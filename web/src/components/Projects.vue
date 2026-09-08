@@ -3,13 +3,18 @@
 
     import {projects} from "@/data/projects.js"
 
-    import Card from "@/components/card.vue"
-    import Modale from "@/components/modale.vue"
+    import Card from "@/components/Card.vue"
+    import Modale from "@/components/Modale.vue"
 
     const selectedProject = ref(null)
     const openModale = ref(false)
 
-    const closeModal = (p) => {
+    const openModal = (project) => {
+        selectedProject.value = project
+        openModale.value = true
+    }
+
+    const closeModal = () => {
         selectedProject.value = null
         openModale.value = false
     }
@@ -27,7 +32,7 @@
             <p>Mes réalisations touchent principalement au développement web, avec des projets personnels et des projets réalisés dans le cadre de ma formation.</p>
 
             <div class="card-content">
-                <Card v-for="p in projects" :key="p" :image="p.image" :title="p.title" :description="p.description" @click="selectedProject = p; openModale = true" />
+                <Card v-for="p in projects" :key="p" :project="p" @click="openModal(p)" />
             </div> 
 
             <Modale v-if="openModale" :project="selectedProject" @close="closeModal" />

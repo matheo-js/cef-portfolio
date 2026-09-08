@@ -1,9 +1,7 @@
 <script setup>
 
     const props = defineProps({
-        image : {type : String, required : true},
-        title : {type : String, required : true},
-        description : {type : String, required : true} 
+        project : {type : Object, required : true}
     })
 
 </script>
@@ -11,8 +9,8 @@
 <template>
 
     <div class="card">
-        <img :src="'./img/' + props.image" :alt="'image ' + props.title">
-        <h3> {{ title }} </h3>
+        <img :src="'./img/' + props.project.image" :alt="'image ' + props.project.title">
+        <h3> {{ props.project.title }} </h3>
     </div>
 
 </template>
@@ -57,7 +55,6 @@
         margin-top: 0.2rem; 
         font-size: var(--text-base);
         color: var(--color-secondary);
-
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
