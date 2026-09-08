@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    list-style: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #E9F1FF;
+}
+
+:root {
+    --text-xxxs: 0.512rem;
+    --text-xxs: 0.64rem;
+    --text-xs: 0.8rem;
+    --text-sm: 0.8rem;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5625rem;
+    --text-xxl: 1.953125rem;
+    --text-xxxl: 2.44140625rem;
+    
+    /* color text */
+    --color-primary : #0f172a; 
+    --color-secondary : #35495e;  
+    
+    /* background */
+    --bg-primary: #162458; 
+    --bg-secondary : #E9F1FF;   
+}
+
+.job-title {
+    font-size: var(--text-base);
+    color: #28A471 !important; 
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.center {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+button {
+    all: unset;
+    margin-top: 2rem;
+    background: #28A471;
+    padding: 0.7rem 2.7rem;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: var(--text-base);  
+    width: fit-content;
+    text-align: center;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.5;
+}
