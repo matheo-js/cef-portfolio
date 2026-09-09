@@ -73,7 +73,7 @@
         margin-top: 3rem !important; 
     }
 
-
+    /* responsive */
     @media screen and (max-width: 900px) 
     {
         .card-content {

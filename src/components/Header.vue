@@ -39,6 +39,7 @@
 
     nav {
         background-color: white;
+        border-bottom: 1px solid var(--color-primary);
         box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     }
 
@@ -74,10 +75,18 @@
         font-weight: 300;
     }
 
+    nav ul a:hover {
+        opacity: 0.6;
+    }
+
     .active {
         color: var(--color-primary);
         text-decoration: underline;
         text-underline-offset: 5px;
+    }
+
+    .active:hover {
+        opacity: 1 !important;
     }
 
     .flex {
@@ -85,5 +94,5 @@
         align-items: center;
         justify-content: space-between; 
     }
-    
+
 </style>

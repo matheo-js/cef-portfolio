@@ -6,13 +6,13 @@ export const projects = [
     }, 
     
     {
-        image : 'cahier des charges.jpg',
+        image : 'cahier-des-charges.jpg',
         title : 'cahier des charges',
         description : "Cette année durant ma formation j'ai appris à concevoir un cahier des charges"
     },
     
     {
-        image : 'base de données.png',
+        image : 'database.png',
         title : 'base de données',
         description : "Cette année durant ma formation j'ai appris à concevoir une base de données."
     }, 

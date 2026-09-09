@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #E9F1FF;
+    background-color: var(--bg-primary);
 }
 
 :root {
@@ -26,19 +26,21 @@ body {
     /* color text */
     --color-primary : #0f172a; 
     --color-secondary : #35495e;  
-    
+    --color-tertiary : #4343fe;  
+    --color-quaternary : #fe4343; 
+
     /* background */
-    --bg-primary: #162458; 
-    --bg-secondary : #E9F1FF;   
+    --bg-primary: #E9F1FF; 
+    --bg-secondary : #ffffff;   
 }
 
 .job-title {
     font-size: var(--text-base);
-    color: #28A471 !important; 
+    color: var(--color-tertiary) !important; 
     margin-top: 0;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .center {
@@ -50,12 +52,12 @@ body {
 button {
     all: unset;
     margin-top: 2rem;
-    background: #28A471;
+    background: var(--color-tertiary);
     padding: 0.7rem 2.7rem;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: capitalize;
     font-size: var(--text-base);  
     width: fit-content;

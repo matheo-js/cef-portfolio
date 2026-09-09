@@ -1,6 +1,6 @@
 <template>
 
-    <footer style="background: white;">
+    <footer>
         
         <div class="center" style="padding: 1.5rem;">
 
@@ -35,6 +35,7 @@
         flex-direction: column; 
         justify-content: center;
         align-items: center; 
+        background: var(--bg-secondary);
     }
     
     footer small {
@@ -59,7 +60,7 @@
     }
 
     .content-footer-item a:hover {
-        color: #28A471;
+        color: var(--color-tertiary);
     }
 
 </style>

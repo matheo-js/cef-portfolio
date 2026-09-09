@@ -81,7 +81,7 @@
         gap: 1.6rem;
         margin-top: 3rem !important;
         padding: 2.4rem; 
-        background-color: white; 
+        background-color: var(--bg-secondary); 
         border-radius: 1rem;
         max-width: 600px;
         overflow: hidden;
@@ -104,18 +104,23 @@
     form input, form textarea {
         all: unset;
         box-sizing: border-box;
-        background: #E9F1FF;
+        background: var(--bg-primary);
         padding: 0.8rem;
         width: 100%;
         border-radius: 5px;
-        color: #0f172a;
+        color: var(--color-primary);
         font-size: var(--text-base);
         width: 100%;
     }
 
+    form input::placeholder, form textarea::placeholder {
+        color: var(--color-secondary);
+        opacity: 0.7;
+    }
+
     /* autocompletion input color */
     input:-webkit-autofill {
-        -webkit-box-shadow: 0 0 0 1000px #E9F1FF inset !important;
+        -webkit-box-shadow: 0 0 0 1000px var(--bg-primary) inset !important;
     }
 
     textarea {
@@ -124,7 +129,7 @@
     }
 
     *:focus {
-        outline: solid 1px #28A471 !important;
+        outline: solid 1px var(--color-tertiary) !important;
     }
 
     .name-container {

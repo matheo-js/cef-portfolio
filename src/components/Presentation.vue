@@ -53,21 +53,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 3em;
+        gap: 2em;
     }
  
-
     .presentation-container button {
         width: fit-content;
     }
 
     .image-container {
         position: relative;
-        height: 270px;
+        height: 260px;
         aspect-ratio: 1/1;
         background-image:
             url("/public/img/photo.png"), 
-            linear-gradient(to right, #28A471, #2ECC71); 
+            linear-gradient(to right, var(--color-tertiary), var(--color-tertiary)); 
         border-radius: 50%;
         background-size: cover;
         background-position: center;
@@ -105,7 +104,7 @@
         font-size: var(--text-base);  
         border-radius: 50%;
         box-shadow: 5px 4px 0 black;
-        background: rgb(255, 59, 59);
+        background: var(--color-quaternary);
     } 
 
     @media screen and (max-width: 900px) 

@@ -15,18 +15,12 @@
 <template>
 
     <div class="modale-content" @click.self="emit('close')">
-
         <div class="modal">
-
-            <img :src="'./img/' + project.image" :alt="'image du projet' + project.title">
-
+            <img :src="'/public/img/' + project.image" :alt="'image du projet' + project.title">
             <h3> {{ project.title }} </h3>
             <p> {{ project.description }} </p>
-
             <button @click="emit('close')">Fermer</button>
-
         </div>
-
     </div>
 
 </template>
@@ -50,7 +44,7 @@
     }
 
     .modal {
-        background: white;
+        background: var(--bg-secondary);
         width: 590px;
         max-width: 100%;
         overflow: hidden;

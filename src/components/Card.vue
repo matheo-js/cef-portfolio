@@ -9,7 +9,7 @@
 <template>
 
     <div class="card">
-        <img :src="'./img/' + props.project.image" :alt="'image ' + props.project.title">
+        <img :src="'/public/img/' + props.project.image" :alt="'image ' + props.project.title">
         <h3> {{ props.project.title }} </h3>
     </div>
 
@@ -22,7 +22,7 @@
         display: block;
         padding: 1.3rem;
         cursor: pointer;
-        background: #E9F1FF;
+        background: var(--bg-primary);
         overflow: hidden;
         border-radius: 15px; 
     }
@@ -42,7 +42,6 @@
     .card h3 {
         margin-top: 1rem; 
         font-size: var(--text-base);
-        /* font-weight: bold; */
         color: var(--color-primary);
         text-transform: uppercase;
 
